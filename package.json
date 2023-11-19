@@ -1,0 +1,15 @@
+{
+  "name": "drink-drink",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "lint-fix": "yarn workspaces run prettier",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "yarn workspace lambda run build && yarn workspace cdktf-iac run deploy"
+  },
+  "workspaces": ["packages/*"],
+  "author": "",
+  "license": "ISC"
+}
