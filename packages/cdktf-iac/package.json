@@ -1,0 +1,22 @@
+{
+  "name": "cdktf-iac",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prettier": "prettier 'src/**/*.ts' --write",
+    "plan": "cdktf plan",
+    "deploy": "cdktf deploy DrinkDrink --auto-approve",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@cdktf/provider-aws": "^18.0.6",
+    "cdktf": "^0.19.1",
+    "cdktf-cli": "^0.19.1",
+    "constructs": "^10.3.0",
+    "dotenv": "^16.3.1",
+    "prettier": "^3.1.0"
+  }
+}
